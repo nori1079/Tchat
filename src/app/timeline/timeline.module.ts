@@ -5,7 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ChatComponent } from './chat/chat.component';
 
 import { UserListComponent } from './user-list/user-list.component';
-import { TimelineRoutingModule } from '../time/timeline-routing.module';
+import { TimelineRoutingModule } from './timeline-routing.module';
 
 @NgModule({
   imports: [
