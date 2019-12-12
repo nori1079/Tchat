@@ -9,7 +9,7 @@ import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
-  { path: '', loadChildren: 'app/timeline/timeline.module#TimelineModule' },
+  { path: 'timeline', loadChildren: 'app/timeline/timeline.module#TimelineModule' },
   { path: 'users', loadChildren: 'app/users/users.module#UsersModule' },
   { path: 'signup', component: SignUpComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
