@@ -1,7 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-
+@Component({
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
+  styleUrls: ['./not-found.component.scss']
+})
 export class NotFoundComponent implements OnInit {
 
   constructor() { }
@@ -10,27 +13,3 @@ export class NotFoundComponent implements OnInit {
   }
 
 }
-
-
-
-describe('NotFoundComponent', () => {
-  let component: NotFoundComponent;
-  let fixture: ComponentFixture<NotFoundComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [NotFoundComponent]
-    })
-      .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(NotFoundComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
