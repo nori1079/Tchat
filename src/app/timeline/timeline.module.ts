@@ -7,6 +7,7 @@ import { ChatComponent } from './chat/chat.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { TimelineRoutingModule } from './timeline-routing.module';
 
+
 @NgModule({
   imports: [
     CommonModule,

@@ -1,5 +1,6 @@
-import { format } from 'date-fns';
 import { User } from './user';
+import * as moment from 'moment';
+
 
 export class Comment {
   user: User;
@@ -13,7 +14,7 @@ export class Comment {
     this.user = values.user;
     this.initial = values.initial || values.user.displayName.slice(0, 1);
     this.message = values.message;
-    this.date = values.date || format(new Date());
+    this.date = values.date || +moment();
     if (values.key) { this.key = values.key; }
     this.isEdit = false;
   }
